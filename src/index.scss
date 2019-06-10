@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400|Roboto+Condensed|Roboto:300,400');
+
+$fontRoboto: 'Roboto', sans-serif;
+$fontRobotoCond: 'Roboto Condensed', sans-serif;
+$fontOswald: 'Oswald', sans-serif;
+
+$break-large: 825px;
+
+$dark-blue: #21222D;
+$orange: #F18805;
+$light-blue: #34a0e2;
+
+@import './containers/App/App';
+
+@import './components/Loading/Loading';
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #21222D;
+  background-size: cover;
+  height: 100%;
+  background-repeat: round;
+  width: 100%;
+}
+
+body, #root, .App {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $fontRoboto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
