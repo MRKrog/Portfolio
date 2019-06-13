@@ -31,3 +31,17 @@
     transform: rotate(360deg);
   }
 }
+
+.SideBar-Backdrop-hidden {
+  display: none
+}
+
+.SideBar-Backdrop-visible {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #231f20bf;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+}

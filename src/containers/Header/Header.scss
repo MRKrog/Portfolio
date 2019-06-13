@@ -1,0 +1,38 @@
+.Header {
+  background: rgba(27, 24, 25, .9);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  z-index: 99;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  box-shadow: 2px -1px 7px 0px #00000078;
+
+  .Header-Title {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: .08em;
+      height: 35px;
+      background-color: #c8c8c8;
+      opacity: .2;
+      top: -45px;
+    }
+  }
+
+  h4 {
+    margin: 0;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-transform: uppercase;
+    font-family: $fontIndustryLight;
+    position: relative;
+    font-size: 1.3em;
+    color: #c8c8c8;
+    opacity: .2;
+  }
+}

@@ -1,0 +1,76 @@
+.Hero {
+  background: url('./assets/images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  -webkit-clip-path: polygon(50% 10%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+  clip-path: polygon(50% 10%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+
+  .Hero-Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .Hero-Titles {
+      display: flex;
+      justify-content: center;
+      width: 86%;
+      height: 116px;
+      margin-top: 50px;
+
+      .Hero-TitleMain {
+        margin: 0;
+        position: relative;
+
+        h1 {
+          font-family: $fontOswald;
+          margin: 0;
+          text-transform: uppercase;
+          font-size: 6.15em;
+          font-weight: 200;
+          line-height: 1;
+          position: relative;
+          color: #fff;
+          mix-blend-mode: overlay;
+
+          &::before {
+            content: "";
+            height: 2px;
+            background-color: #fff;
+            width: 100%;
+            position: absolute;
+            bottom: -15px;
+            left: 0px;
+          }
+          &::after {
+            content: "";
+            height: 2px;
+            background-color: #fff;
+            width: 100%;
+            position: absolute;
+            bottom: -5px;
+            left: 0px;
+          }
+        }
+      }
+
+      h3 {
+        font-family: $fontOswald;
+        text-transform: uppercase;
+        margin: 0;
+        font-weight: 200;
+        font-size: 2.2em;
+        line-height: 1;
+        align-self: flex-end;
+        padding-left: .2em;
+        color: #fff;
+        mix-blend-mode: overlay;
+      }
+
+    }
+
+  }
+}

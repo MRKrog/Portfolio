@@ -1,0 +1,184 @@
+.FeaturedProject {
+  margin-top: 3.5em;
+  background: #231f20;
+  height: 300px;
+  position: relative;
+
+  .Featured-Background {
+    background: url('./assets/images/Dirt.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    padding: 1em 50px;
+
+    .Featured-Content {
+      display: flex;
+      height: 100%;
+      align-items: center;
+
+      .projectIcon {
+        flex: 2;
+      }
+
+      .projectCopy {
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+        text-align: left;
+        color: #fff;
+        position: relative;
+        left: 1em;
+
+        h4 {
+          margin: 0;
+          font-family: $fontOswald;
+          text-transform: uppercase;
+          font-weight: 200;
+          letter-spacing: 2px;
+          font-size: .9em;
+          position: relative;
+          line-height: 1;
+          padding-left: 25px;
+          display: inline-block;
+          color: $light-gray;
+
+          @media (max-width: $break-960px) {
+            font-size: .75em;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 18px;
+            height: 1px;
+            left: 0px;
+            background: #ffffff8a;
+          }
+        }
+
+        h2 {
+          margin: 0;
+          font-family: $fontBebasRegular;
+          text-transform: uppercase;
+          white-space: pre-line;
+          font-weight: 300;
+          font-size: 4.2em;
+          line-height: .9;
+          padding-bottom: 3px;
+          padding-top: 8px;
+          position: relative;
+          letter-spacing: .025em;
+          color: $light-gray;
+
+          @media (max-width: $break-960px) {
+            font-size: 3.7em;
+          }
+
+          &::after {
+            content: '';
+            width: 60%;
+            position: absolute;
+            height: 1px;
+            background: $light-blue;
+            bottom: 0px;
+            left: 0px;
+          }
+        }
+
+        p {
+          margin: 0;
+          font-family: $fontRoboto;
+          font-weight: 100;
+          font-size: .85em;
+          padding: 6px 0 3px 0;
+          letter-spacing: .05em;
+
+          @media (max-width: $break-960px) {
+            font-size: .75em;
+          }
+
+        }
+
+        a {
+          text-decoration: none;
+          font-family: $fontIndustryLight;
+          color: #fff;
+          font-size: .85em;
+          font-weight: bold;
+          letter-spacing: .05em;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          img {
+            width: 20px;
+            line-height: 0;
+            height: auto;
+            margin-left: .5em;
+            position: relative;
+            top: 2px;
+            left: 0px;
+            transition: left ease 0.3s;
+          }
+
+          &:hover {
+
+            img {
+              left: 3px;
+            }
+          }
+        }
+      }
+
+      .projectImage {
+        flex: 3.5;
+
+        .imageBg {
+          background-size: cover;
+          background-position: center;
+          height: 260px;
+          width: 100%;
+          box-shadow: 0 0 5px 2px #101010e6;
+        }
+      }
+    }
+  }
+
+  .Project-Link {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    color: #fff;
+    z-index: 9;
+    opacity: 1;
+    transition: all .5s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      border-left: 0px solid transparent;
+      border-top: 37px solid transparent;
+      border-right: 40px solid $light-blue;
+    }
+    &::after {
+      content: "+";
+      position: absolute;
+      font-size: 1.5em;
+      right: 5px;
+      bottom: -3px;
+      color: #fff;
+    }
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+}
+
+.FeaturedProject:last-child {
+  margin-bottom: 3.5em;
+}

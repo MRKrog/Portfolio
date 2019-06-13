@@ -1,0 +1,46 @@
+.Menu-Content {
+  width: 200px;
+}
+
+.Menu {
+  position: absolute;
+  top: 0px;
+
+  button:hover {
+    span.bar {
+      opacity: .6;
+    }
+
+  }
+
+  .MuiButton-label {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .MenuBtn {
+
+    span.bar {
+      transition: all .5s ease;
+      height: 1px;
+      width: 100%;
+      background: #fff;
+      margin-top: 6px;
+        opacity: 1;
+    }
+
+    span.bar:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .MuiButton-root {
+    font-size: 1em;
+    padding: 10px 8px;
+    min-width: 50px;
+  }
+
+  img {
+    max-width: 30px;
+  }
+}
