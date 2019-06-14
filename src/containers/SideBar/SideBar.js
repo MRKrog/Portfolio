@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import * as actions from '../../actions';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import * as actions from '../../actions';
 import { sideBarDisplay } from '../../thunks/sideBarDisplay';
+
 
 export class SideBar extends Component {
 
@@ -31,12 +33,15 @@ export class SideBar extends Component {
         <section className="SideBar-Navigation">
           <section className="pageLinksContainer">
             <div className="navigation-row">
-              <a className="navigation-title" href="#">Nav One</a>
+              <i className="fas fa-info"></i>
+              <Link className="navigation-title" to="/" onClick={this.toggleMenu}>Home</Link>
             </div>
             <div className="navigation-row">
+              <i className="fas fa-info"></i>
               <a className="navigation-title" href="#">Nav Two</a>
             </div>
             <div className="navigation-row">
+              <i className="fas fa-info"></i>
               <a className="navigation-title" href="#">Nav Three</a>
             </div>
           </section>
@@ -60,7 +65,7 @@ export class SideBar extends Component {
             </div>
           </section>
           <div className='SideBar-Title'>
-            <h4>Projects</h4>
+            <h4>Menu</h4>
           </div>
         </section>
 

@@ -17,3 +17,13 @@ export const setMenu = status => ({
   type: "SET_MENU",
   status
 });
+
+export const setCurrentProject = currentProject => ({
+  type: "SET_CURRENT",
+  currentProject
+});
+
+export const setProjects = projects => ({
+  type: "SET_PROJECTS",
+  projects
+});

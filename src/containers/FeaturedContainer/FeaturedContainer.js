@@ -1,12 +1,21 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import * as actions from '../../actions';
-import PropTypes from 'prop-types';
-import FeaturedProject from '../FeaturedProject/FeaturedProject';
-import { allProjects } from '../../projectData/projects.js'
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import * as actions from "../../actions";
+import PropTypes from "prop-types";
+import FeaturedProject from "../FeaturedProject/FeaturedProject";
+import Hero from "../Hero/Hero";
+import { allProjects } from "../../projectData/projects.js"
 
 
-class FeaturedContainer extends Component {
+export class FeaturedContainer extends Component {
+  constructor() {
+    super()
+    this.state = {
+      mainImage: "hero",
+      mainTitle: "Michael Krog",
+      subTitle: "Portfolio",
+    }
+  }
 
   render() {
     const { featuredProjects } = this.props
@@ -16,8 +25,11 @@ class FeaturedContainer extends Component {
     });
 
     return (
-      <div className='FeaturedContainer'>
-        { allFeaturedProjects }
+      <div className="container">
+        <Hero {...this.state} />
+        <div className="FeaturedContainer">
+          { allFeaturedProjects }
+        </div>
       </div>
     )
   }
