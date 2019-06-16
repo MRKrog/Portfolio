@@ -11,7 +11,7 @@ class TiltPhaseSix extends Component {
       reverse: false,
       max: 35,
       perspective: 1000,
-      easing: 'cubic-bezier(.03,.98,.52,.99)',
+      easing: 'cubic-bezier(.3,.98,.52,.99)',
       scale: '1.1',
       speed: '1000',
       transition: true,
