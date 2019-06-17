@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Route, Switch } from "react-router-dom";
 import * as actions from '../../actions';
 
-import Loading from '../../components/Loading/Loading';
+import Footer from '../../components/Footer/Footer';
 import SideBar from '../SideBar/SideBar';
 import FeaturedContainer from '../FeaturedContainer/FeaturedContainer';
 import ProjectContainer from '../ProjectContainer/ProjectContainer';
@@ -22,7 +22,7 @@ export class App extends Component {
   }
 
   render() {
-    const { menu, sideBarDisplay, allProjects } = this.props;
+    const { menu, sideBarDisplay } = this.props;
 
     let backDropStyle;
     if(!menu){
@@ -51,7 +51,7 @@ export class App extends Component {
             }} />
           }
         </Switch>
-
+        <Footer />
         <section className={backDropStyle} onClick={() => sideBarDisplay(false)}></section>
       </div>
     )

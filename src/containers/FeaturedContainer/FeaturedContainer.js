@@ -4,7 +4,6 @@ import * as actions from "../../actions";
 import PropTypes from "prop-types";
 import FeaturedProject from "../FeaturedProject/FeaturedProject";
 import Hero from "../Hero/Hero";
-import { allProjects } from "../../projectData/projects.js"
 
 
 export class FeaturedContainer extends Component {

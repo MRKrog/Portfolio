@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-
 import TiltPhaseSix from '../TiltPhaseSix/TiltPhaseSix'
 
 const options = {
@@ -11,21 +8,15 @@ const options = {
   scale: 1,
 }
 
-const optionsBack = {
-  max: 10,
-  perspective: 10000,
-  scale: 1.001,
-}
-
 class FeaturedProject extends Component {
 
   render() {
-    const { copy, projectImage, title, id, deviceImage, type, gitHub, builtWith } = this.props;
+    const { copy, projectImage, title, deviceImage, type, gitHub, builtWith } = this.props;
 
     let tools = builtWith.map(tool => {
       return (
-        <div className="builtRow">
-          <img src={require(`../../assets/icons/tools/${tool}.png`)} />
+        <div className="builtRow" key={tool}>
+          <img src={require(`../../assets/icons/tools/${tool}.png`)} alt={tool} />
           <h5>{tool}</h5>
         </div>
       )
@@ -46,8 +37,10 @@ class FeaturedProject extends Component {
             </div>
           </section>
             <section className="projectCopy">
-              <h4>{type}</h4>
-              <h2>{title}</h2>
+              <div className="projectHeader">
+                <h4>{type}</h4>
+                <h2>{title}</h2>
+              </div>
               <p>{copy}</p>
             </section>
             <section className="projectImage">
@@ -66,8 +59,8 @@ class FeaturedProject extends Component {
                   </div>
                 </TiltPhaseSix>
               </div>
-              <a href={gitHub} className="Project-Link" target="_blank">
-                View Project <img src={require('../../assets/icons/arrow.svg')} />
+              <a href={gitHub} className="Project-Link" target="_blank" rel="noopener noreferrer">
+                View Project <img src={require('../../assets/icons/arrow.svg')} alt="View Project" />
               </a>
             </section>
           </div>
@@ -75,6 +68,10 @@ class FeaturedProject extends Component {
       </div>
     )
   }
+}
+
+FeaturedProject.propTypes = {
+  gitHub: PropTypes.string,
 }
 
 export default FeaturedProject

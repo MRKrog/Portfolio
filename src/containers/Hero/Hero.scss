@@ -1,10 +1,14 @@
 .Hero {
   background-size: cover;
-  background-position: top;
+  background-position: center;
   height: 400px;
   width: 100%;
   -webkit-clip-path: polygon(50% 8%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
   clip-path: polygon(50% 8%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+
+  @media (max-width: $break-550px) {
+    height: 250px;
+  }
 
   .Hero-Content {
     display: flex;
@@ -13,17 +17,16 @@
     align-items: center;
     height: 100%;
 
-    &.Hero-Texture {
-      // background: url('./assets/images/office.png') repeat;
-      // background-size: auto;
-    }
-
     .Hero-Titles {
       display: flex;
       justify-content: center;
-      width: 86%;
       height: 116px;
-      margin-top: 50px;
+
+      @media (max-width: $break-825px) {
+        margin-top: 0px;
+        flex-direction: column;
+        height: auto;
+      }
 
       .Hero-TitleMain {
         margin: 0;
@@ -39,6 +42,18 @@
           position: relative;
           color: #fff;
           mix-blend-mode: overlay;
+
+          @media (max-width: $break-825px) {
+            font-size: 6em;
+          }
+
+          @media (max-width: $break-700px) {
+            font-size: 5em;
+          }
+
+          @media (max-width: $break-550px) {
+            font-size: 4em;
+          }
 
           &::before {
             content: "";
@@ -72,6 +87,10 @@
         padding-left: .2em;
         color: #fff;
         mix-blend-mode: overlay;
+
+        @media (max-width: $break-825px) {
+          padding-top: 20px;
+        }
       }
 
     }

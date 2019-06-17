@@ -2,7 +2,7 @@ export const allProjects = [
   {
     id: 1,
     title: "Bar \n Stock",
-    copy: "BarStock is an app that makes it easier for bar owners to place orders from their distributors.",
+    copy: "BarStock is a native application with the ability to place orders from their distributors, analyze profit margins, and automate text message/email ordering.",
     projectImage: "barStockBG",
     deviceImage: "barStockDevice",
     featured: true,

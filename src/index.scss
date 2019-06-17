@@ -26,8 +26,11 @@ $fontIndustryDemi: 'Industry-Demi', sans-serif;
 $fontIndustryBook: 'Industry-Book', sans-serif;
 
 
-$break-large: 825px;
+$break-1200px: 1200px;
 $break-960px: 960px;
+$break-825px: 825px;
+$break-700px: 700px;
+$break-550px: 550px;
 
 $dark-blue: #21222D;
 $orange: #F18805;
@@ -41,6 +44,7 @@ $light-gray: #c8c8c8;
 @import './containers/ProjectContainer/ProjectContainer';
 @import './containers/SideBar/SideBar';
 
+@import './components/Footer/Footer';
 @import './components/Loading/Loading';
 
 
@@ -51,13 +55,9 @@ $light-gray: #c8c8c8;
 html {
   background: #373737;
   height: 100%;
-  width: 100%;    // background: url('./assets/images/Dirt.png');
+  width: 100%;  
   background: linear-gradient(0deg, rgba(19, 19, 19, .93), rgba(19, 19, 19, .93)), url('./assets/images/Dirt.png') repeat;
   background-size: contain;
-}
-
-body, #root, .App {
-  height: 100%;
 }
 
 body {

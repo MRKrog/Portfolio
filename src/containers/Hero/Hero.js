@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-
 
 class Hero extends Component {
 
@@ -28,6 +26,12 @@ class Hero extends Component {
       </div>
     )
   }
+}
+
+Hero.propTypes = {
+  mainImage: PropTypes.string,
+  mainTitle: PropTypes.string,
+  subTitle: PropTypes.string,
 }
 
 export default Hero
