@@ -67,8 +67,7 @@
             font-size: 2em;
             letter-spacing: 4px;
             font-weight: 100;
-            color: #6f6f6f78;
-            mix-blend-mode: color;
+            color: #6f6f6f26;
             padding-bottom: 5px;
 
             @media (max-width: $break-1200px) {
@@ -81,7 +80,7 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
-          border-left: solid 1px #6f6f6f40;
+          border-left: solid 1px #6f6f6f26;
           padding-left: 10px;
 
             .builtRow {
@@ -91,9 +90,8 @@
               padding-bottom: 5px;
 
               img {
-                mix-blend-mode: hue;
                 width: 45px;
-                opacity: .5;
+                opacity: .2;
 
                 @media (max-width: $break-1200px) {
                   width: 35px;
@@ -105,8 +103,7 @@
                 margin: 0;
                 font-size: 1.5em;
                 letter-spacing: 2px;
-                color: #6f6f6f78;
-                mix-blend-mode: color;
+                color: #6f6f6f26;
                 font-weight: 300;
                 text-transform: uppercase;
                 font-family: $fontOswald;
@@ -175,7 +172,7 @@
 
             @media (max-width: $break-700px) {
               padding-left: 0;
-              font-size: .25em;
+              font-size: .65em;
             }
 
             &::before {
@@ -200,15 +197,13 @@
           h2 {
             margin: 0;
             font-family: $fontBebasRegular;
-            text-transform: uppercase;
             white-space: pre-line;
-            font-weight: 300;
-            font-size: 6em;
+            font-size: 5.5em;
             line-height: .9;
-            padding-bottom: 3px;
-            padding-top: 10px;
+            padding-bottom: 0px;
+            padding-top: 15px;
             position: relative;
-            letter-spacing: .025em;
+            letter-spacing: .05em;
             color: #b3b3b3;
 
             @media (max-width: $break-1200px) {

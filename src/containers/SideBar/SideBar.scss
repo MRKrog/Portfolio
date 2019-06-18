@@ -155,11 +155,11 @@
     &:hover {
 
       .SideBar-Icon {
-        opacity: .4;
+        opacity: .6;
       }
 
       .SideBar-Title {
-        opacity: .4;
+        opacity: .6;
       }
     }
 
@@ -170,7 +170,7 @@
       left: 7px;
       width: 35px;
       height: 35px;
-      opacity: .3;
+      opacity: .4;
       transition: all .5s ease;
 
       .hamburger__icon {
@@ -185,7 +185,7 @@
     .SideBar-Title {
       position: relative;
       transition: all .5s ease;
-      opacity: .2;
+      opacity: .4;
 
       &::before {
         content: '';
@@ -208,7 +208,5 @@
         font-weight: 100;
       }
     }
-
   }
-
 }

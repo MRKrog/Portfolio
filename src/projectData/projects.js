@@ -2,7 +2,7 @@ export const allProjects = [
   {
     id: 1,
     title: "Bar \n Stock",
-    copy: "BarStock is a native application with the ability to place orders from their distributors, analyze profit margins, and automate text message/email ordering.",
+    copy: "Native application for the frugal bar owner. View Distributor’s liquor products. Estimate overall cost of orders, analyze projected profits, and send order through text or email",
     projectImage: "barStockBG",
     deviceImage: "barStockDevice",
     featured: true,
@@ -13,7 +13,7 @@ export const allProjects = [
   {
     id: 2,
     title: "Movie \n Tracker",
-    copy: "Web application that allows the user to view the best movie of every genre and have the ability to save their favorite movies to view the information later.",
+    copy: "A Web application fashioned after Netflix.com. Explore upcoming movies, view ratings, and preview the newest trailers. Ability to create an account and save favorite movies to be viewed at a later date.",
     projectImage: "movieTrackerBG",
     deviceImage: "movieTrackerDevice",
     featured: true,
@@ -24,7 +24,7 @@ export const allProjects = [
   {
     id: 3,
     title: "Weather \n Mind",
-    copy: "Web Application my take on the Apple IOS weather app. Gets real time weather of your location with the ability to search locations.",
+    copy: "WeatherMind is my take on the Apple IOS weather app. Retrieves real time weather at current location. Includes the ability to search for specific weather forecasts around the world.",
     projectImage: "weatherMindBG",
     deviceImage: "weatherMindDevice",
     featured: true,
