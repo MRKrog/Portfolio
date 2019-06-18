@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400&display=swap');
 
 @font-face {
     font-family: 'Bebas-Neue';
@@ -13,6 +13,15 @@
   src: url('./assets/fonts/Industry-Light.woff') format('woff'),
        url('./assets/fonts/Industry-Light.eot') format('eot'),
        url('./assets/fonts/Industry-Light.ttf') format('ttf');
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+  font-family: 'Industry-LightItalic';
+  src: url('./assets/fonts/Industry-LightItalic.woff') format('woff'),
+       url('./assets/fonts/Industry-LightItalic.eot') format('eot'),
+       url('./assets/fonts/Industry-LightItalic.ttf') format('ttf');
  font-weight: normal;
  font-style: normal;
 }
@@ -38,6 +47,7 @@
 $fontOswald: 'Oswald', sans-serif;
 $fontBebasRegular: 'Bebas-Neue', sans-serif;
 $fontIndustryLight: 'Industry-Light', sans-serif;
+$fontIndustryLightItalic: 'Industry-LightItalic', sans-serif;
 $fontIndustryDemi: 'Industry-Demi', sans-serif;
 $fontIndustryBook: 'Industry-Book', sans-serif;
 

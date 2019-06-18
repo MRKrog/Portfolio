@@ -17,7 +17,7 @@ const Footer = () => {
       </div>
       <div className="Footer-Contact">
         <i className="far fa-envelope"></i>
-        <a className="navigation-title" href="mailto:michaelryankrog@gmail.com">
+        <a className="navigation-title" target="_blank" href="mailto:michaelryankrog@gmail.com">
           MichaelRyanKrog@gmail.com
         </a>
       </div>

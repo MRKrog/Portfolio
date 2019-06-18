@@ -33,7 +33,7 @@ export class SideBar extends Component {
           <section className="pageLinksContainer">
             <div className="navigation-row">
               <i className="far fa-file"></i>
-              <a className="navigation-title" target="_blank" href="/MichaelKrog_Resume.pdf" rel="noopener noreferrer" onClick={this.toggleMenu}>
+              <a className="navigation-title" target="_blank" href="../../assets/documents/MichaelKrog_Resume.pdf" rel="noopener noreferrer" onClick={this.toggleMenu}>
                 Resume
               </a>
             </div>
