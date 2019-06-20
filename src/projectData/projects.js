@@ -2,7 +2,7 @@ export const allProjects = [
   {
     id: 1,
     title: "Bar \n Stock",
-    copy: "Native application for the frugal bar owner. View Distributor’s liquor products. Estimate overall cost of orders, analyze projected profits, and send order through text or email",
+    copy: "Native application for the frugal bar owner. View Distributor’s liquor products. Estimate overall cost of orders, analyze projected profits, and send order through text or email.",
     projectImage: "barStockBG",
     deviceImage: "barStockDevice",
     featured: true,
@@ -34,13 +34,14 @@ export const allProjects = [
   },
   {
     id: 4,
-    title: "Weather \n Mind 2",
-    copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-    projectImage: "projectImage",
-    deviceImage: "movieTrackerDevice",
+    title: "Palette \n Picker",
+    copy: "Palette Picker is a single page application that gives the user the ability to generate custom color palettes, lock colors, and save palettes to projects for future design inspirations.",
+    projectImage: "palettePickerBG",
+    deviceImage: "palettePickerDevice",
     featured: false,
     type: "Web Application",
-    builtWith: ["reactjs", "javascript", "redux", "ruby"],
-    gitHub: "",
+    builtWith: ["reactjs", "javascript", "redux", "nodejs", "material-ui"],
+    gitHub: "https://github.com/MRKrog/palette-ui",
+    pageLink: "https://paletteui.herokuapp.com/"
   }
 ]

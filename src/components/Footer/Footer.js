@@ -5,7 +5,7 @@ const Footer = () => {
     <div className='Footer'>
       <div className="Footer-Contact">
         <i className="fas fa-file"></i>
-        <a className="navigation-title" target="_blank" href="/MichaelKrog_Resume.pdf">
+        <a className="navigation-title" target="_blank" href="/MichaelKrog_Resume.pdf" rel="noopener noreferrer">
           Resume
         </a>
       </div>
@@ -17,7 +17,7 @@ const Footer = () => {
       </div>
       <div className="Footer-Contact">
         <i className="far fa-envelope"></i>
-        <a className="navigation-title" target="_blank" href="mailto:michaelryankrog@gmail.com">
+        <a className="navigation-title" target="_blank" href="mailto:michaelryankrog@gmail.com" rel="noopener noreferrer">
           MichaelRyanKrog@gmail.com
         </a>
       </div>
