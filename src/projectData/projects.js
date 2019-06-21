@@ -43,5 +43,16 @@ export const allProjects = [
     builtWith: ["reactjs", "javascript", "redux", "nodejs", "material-ui"],
     gitHub: "https://github.com/MRKrog/palette-ui",
     liveLink: "https://paletteui.herokuapp.com/"
+  },
+  {
+    id: 5,
+    title: "Trapper \n Keeper",
+    copy: "Web Application based on the user functionality of Google Keep. You can add and save notes. Notes can also be edited, list items marked as completed, and the background color of the note can be changed.",
+    projectImage: "trapperKeeperBG",
+    deviceImage: "trapperKeeperDevice",
+    featured: false,
+    type: "Web Application",
+    builtWith: ["reactjs", "javascript", "redux", "nodejs"],
+    gitHub: "https://github.com/MRKrog/TrapperKeeper",
   }
 ]
