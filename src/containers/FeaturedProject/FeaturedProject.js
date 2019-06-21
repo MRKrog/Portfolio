@@ -11,7 +11,7 @@ const options = {
 class FeaturedProject extends Component {
 
   render() {
-    const { copy, projectImage, title, deviceImage, type, gitHub, builtWith } = this.props;
+    const { copy, projectImage, title, deviceImage, type, gitHub, builtWith, liveLink } = this.props;
 
     let tools = builtWith.map(tool => {
       return (
@@ -45,7 +45,7 @@ class FeaturedProject extends Component {
             </section>
             <section className="projectImage">
               <div style={{
-                      background: `url(${require(`../../assets/images/${projectImage}.jpg`)}) no-repeat center`,
+                      background: `url(${require(`../../assets/images/projectBG/${projectImage}.jpg`)}) no-repeat center`,
                       backgroundSize: 'cover',
                       height: 325,
                       width: '100%',
@@ -59,9 +59,17 @@ class FeaturedProject extends Component {
                   </div>
                 </TiltPhaseSix>
               </div>
-              <a href={gitHub} className="Project-Link" target="_blank" rel="noopener noreferrer">
-                View Project <img src={require('../../assets/icons/arrow.svg')} alt="View Project" />
-              </a>
+              <div className="Project-Links">
+                {
+                  liveLink &&
+                  <a href={liveLink} className="Link link-left" target="_blank" rel="noopener noreferrer">
+                    <img src={require('../../assets/icons/arrow-left.svg')} alt="View Github" /> <i className="fas fa-eye"></i>
+                  </a>
+                }
+                <a href={gitHub} className="Link link-right" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-github"></i> <img src={require('../../assets/icons/arrow-right.svg')} alt="View Project" />
+                </a>
+              </div>
             </section>
           </div>
         </div>

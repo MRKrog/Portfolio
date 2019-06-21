@@ -32,21 +32,30 @@ export class SideBar extends Component {
         <section className="SideBar-Navigation">
           <section className="pageLinksContainer">
             <div className="navigation-row">
-              <i className="far fa-file"></i>
+              <img src={require('../../assets/icons/file-user-solid.svg')} alt="View Resume" />
               <a className="navigation-title" target="_blank" href="/MichaelKrog_Resume.pdf" rel="noopener noreferrer" onClick={this.toggleMenu}>
                 Resume
               </a>
             </div>
+            <div className="navigation-row">
+              <img src={require('../../assets/icons/github.svg')} alt="View Resume" />
+              <a className="navigation-title" target="_blank" href="https://github.com/MRKrog" rel="noopener noreferrer" onClick={this.toggleMenu}>
+                Github Repository
+              </a>
+            </div>
+            <div className="navigation-row">
+              <img src={require('../../assets/icons/linkedin.svg')} alt="View Resume" />
+              <a className="navigation-title" target="_blank" href="https://www.linkedin.com/in/michaelkrog/" rel="noopener noreferrer" onClick={this.toggleMenu}>
+                Linkedin Profile
+              </a>
+            </div>
           </section>
           <section className="webLinksContainer">
-            <a href="https://github.com/MRKrog" target="_blank" className="webLink" rel="noopener noreferrer">
-              <i className="fab fa-github"></i>
+            <a href="mailto:michaelryankrog@gmail.com" target="_blank" className="webLink" rel="noopener noreferrer">
+              <img src={require('../../assets/icons/email.svg')} alt="View Resume" />
             </a>
-            <a href="https://www.linkedin.com/in/michaelkrog/" target="_blank" className="webLink" rel="noopener noreferrer">
-              <i className="fab fa-linkedin"></i>
-            </a>
-            <a href="https://twitter.com/MichaelKrog2" target="_blank" className="webLink" rel="noopener noreferrer">
-              <i className="fab fa-twitter"></i>
+            <a href="tel:1-630-715-4311" className="webLink" rel="noopener noreferrer">
+              <img src={require('../../assets/icons/phone.svg')} alt="Call" />
             </a>
           </section>
         </section>

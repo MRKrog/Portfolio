@@ -10,8 +10,20 @@
     text-align: left;
     padding: 1em 1em 1em 1em;
 
+    &:first-child {
+      padding: 1em 1em 1em 0em;
+    }
+
     &:last-child {
       padding: 1em 0em 1em 1em;
+    }
+
+    img {
+      line-height: 1.2em;
+      padding-right: .75em;
+      max-width: 30px;
+      height: auto;
+      width: 100%;
     }
 
     i {
@@ -22,11 +34,11 @@
     }
 
     .navigation-title {
-      color: #c8c8c824;
-      font-size: 1em;
-      font-weight: bold;
+      color: #c8c8c821;
+      font-size: .9em;
+      font-weight: 300;
       text-decoration: none;
-      font-family: $fontIndustryLight;
+      font-family: $fontIndustryBook;
       line-height: 1;
       opacity: 1;
       transition: all .5s ease;

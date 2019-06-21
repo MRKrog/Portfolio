@@ -17,9 +17,9 @@ export class FeaturedContainer extends Component {
   }
 
   render() {
-    const { featuredProjects } = this.props
+    const { allProjects } = this.props
 
-    let allFeaturedProjects = featuredProjects.map(project => {
+    let allFeaturedProjects = allProjects.map(project => {
       return <FeaturedProject {...project} key={project.title} />
     });
 
@@ -36,7 +36,8 @@ export class FeaturedContainer extends Component {
 
 export const mapStateToProps = state => ({
   loading: state.loading,
-  featuredProjects: state.featuredProjects
+  featuredProjects: state.featuredProjects,
+  allProjects: state.allProjects,
 });
 
 export const mapDispatchToProps = dispatch => ({

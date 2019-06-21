@@ -42,6 +42,6 @@ export const allProjects = [
     type: "Web Application",
     builtWith: ["reactjs", "javascript", "redux", "nodejs", "material-ui"],
     gitHub: "https://github.com/MRKrog/palette-ui",
-    pageLink: "https://paletteui.herokuapp.com/"
+    liveLink: "https://paletteui.herokuapp.com/"
   }
 ]
