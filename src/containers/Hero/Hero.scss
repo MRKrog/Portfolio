@@ -10,6 +10,10 @@
     height: 250px;
   }
 
+  @media (max-width: $break-450px) {
+    height: 210px;
+  }
+
   .Hero-Content {
     display: flex;
     flex-direction: column;
@@ -26,6 +30,11 @@
         margin-top: 0px;
         flex-direction: column;
         height: auto;
+      }
+
+      @media (max-width: $break-450px) {
+        position: relative;
+        left: 1em;
       }
 
       .Hero-TitleMain {
@@ -53,6 +62,10 @@
 
           @media (max-width: $break-550px) {
             font-size: 4em;
+          }
+
+          @media (max-width: $break-450px) {
+            font-size: 2.8em;
           }
 
           &::before {
@@ -90,6 +103,10 @@
 
         @media (max-width: $break-825px) {
           padding-top: 20px;
+        }
+
+        @media (max-width: $break-450px) {
+          font-size: 1.5em;
         }
       }
 

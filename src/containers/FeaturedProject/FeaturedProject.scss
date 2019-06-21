@@ -8,6 +8,10 @@
     height: auto;
   }
 
+  @media (max-width: $break-450px) {
+    margin-top: 1.5em;
+  }
+
   .Featured-Background {
     background: url('./assets/images/office.png') repeat;
     height: 100%;
@@ -16,6 +20,10 @@
 
     @media (max-width: $break-700px) {
       padding: 1em 50px 1em 65px;
+    }
+
+    @media (max-width: $break-450px) {
+      padding: 1em 20px 1em 70px;
     }
 
     .Featured-Content {
@@ -28,6 +36,10 @@
         position: relative;
         left: 1em;
         padding: .5em 0;
+      }
+
+      @media (max-width: $break-450px) {
+        left: 0;
       }
 
       .projectDetails {
@@ -138,6 +150,10 @@
           padding-bottom: 1em;
         }
 
+        @media (max-width: $break-450px) {
+          align-items: initial;
+        }
+
         .projectHeader {
           display: flex;
           flex-direction: column;
@@ -147,6 +163,11 @@
             border-right: solid #4e4300 1px;
             padding-right: 1em;
             margin-right: 1em;
+          }
+
+          @media (max-width: $break-700px) {
+            padding-right: .5em;
+            margin-right: .5em;
           }
 
           h4 {
@@ -173,6 +194,11 @@
             @media (max-width: $break-700px) {
               padding-left: 0;
               font-size: .65em;
+            }
+
+            @media (max-width: $break-450px) {
+              font-size: 8px;
+              line-height: 10px;
             }
 
             &::before {
@@ -219,6 +245,11 @@
               white-space: normal;
             }
 
+            @media (max-width: $break-450px) {
+              font-size: 2em;
+              padding-top: 7px;
+            }
+
             &::after {
               content: '';
               width: 90%;
@@ -246,6 +277,11 @@
 
           @media (max-width: $break-1200px) {
             font-size: 1em;
+          }
+
+          @media (max-width: $break-450px) {
+            font-size: .7em;
+            padding: 0;
           }
         }
 
@@ -306,12 +342,22 @@
           @media (max-width: $break-1200px) {
             max-height: 300px;
           }
+
+          @media (max-width: $break-450px) {
+            max-height: 230px;
+          }
         }
       }
 
       @media (max-width: $break-700px) {
         .projectImage > div {
           height: 275px !important;
+        }
+      }
+
+      @media (max-width: $break-450px) {
+        .projectImage > div {
+          height: 225px !important;
         }
       }
 
@@ -401,4 +447,8 @@
 
 .FeaturedProject:last-child {
   margin-bottom: 3.5em;
+
+  @media (max-width: $break-450px) {
+    margin-bottom: 1.5em;
+  }
 }
