@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import FeaturedProject from "../FeaturedProject/FeaturedProject";
 import Hero from "../Hero/Hero";
 
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 export class FeaturedContainer extends Component {
   constructor() {
@@ -25,7 +26,9 @@ export class FeaturedContainer extends Component {
 
     return (
       <div className="container">
+        <ParallaxProvider>
         <Hero {...this.state} />
+        </ParallaxProvider>
         <div className="FeaturedContainer">
           { allFeaturedProjects }
         </div>

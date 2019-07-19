@@ -1,0 +1,44 @@
+.About {
+  display: flex;
+  flex-direction: row;
+
+  .About-Image {
+    img {
+      display: block
+    }
+  }
+
+  .About-Copy {
+    h4 {
+      color:#fff;
+    }
+    h2 {
+      color:#fff;
+    }
+    h5 {
+      color:#fff;
+    }
+    p {
+      color:#fff;
+    }
+    h3 {
+      color:#fff;
+    }
+  }
+}
+
+@media (max-width: $break-825px) {
+
+}
+
+@media (max-width: $break-700px) {
+
+}
+
+@media (max-width: $break-550px) {
+
+}
+
+@media (max-width: $break-450px) {
+
+}

@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import { Parallax } from 'react-scroll-parallax';
+
+
 class Hero extends Component {
 
   render() {
@@ -14,7 +17,9 @@ class Hero extends Component {
     }
 
     return (
+<Parallax className="custom-class" y={[-10, 10]} tagOuter="div">
       <div className='Hero' style={{backgroundImage: `url(${require(`../../assets/images/${mainImage}.jpg`)})`}}>
+
         <div className={heroStyle}>
           <div className="Hero-Titles">
             <div className="Hero-TitleMain">
@@ -23,7 +28,9 @@ class Hero extends Component {
             <h3>{subTitle}</h3>
           </div>
         </div>
+
       </div>
+</Parallax>
     )
   }
 }
