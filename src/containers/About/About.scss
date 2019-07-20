@@ -1,28 +1,109 @@
 .About {
   display: flex;
   flex-direction: row;
+  padding: 1em 50px 0 50px;
+
+
+  &::before {
+    content: "";
+    background: #191919;
+    -webkit-clip-path: polygon(100% 0%, 100% 0, 100% 100%, 20% 100%, 0 100%, 100% 0);
+    clip-path: polygon(100% 0%, 100% 0, 100% 100%, 20% 100%, 0 100%, 100% 0);
+    width: 100%;
+    position: absolute;
+    height: 294px;
+    // z-index: 8;
+  }
 
   .About-Image {
     img {
-      display: block
+      display: block;
+      filter: grayscale(0.6);
+      opacity: .8;
+      z-index: 1;
+      max-width: 300px;
     }
   }
 
   .About-Copy {
+    text-align: left;
+    padding-left: 2em;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    z-index: 9;
+
     h4 {
-      color:#fff;
+      font-family: $fontOswald;
+      margin: 0;
+      text-transform: uppercase;
+      font-weight: 300;
+      letter-spacing: 2px;
+      font-size: .9em;
+      position: relative;
+      line-height: 1;
+      padding-left: 25px;
+      display: inline-block;
+      color: #b3b3b3;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 18px;
+        height: 1px;
+        left: 0px;
+        background: #b3b3b394;
+      }
     }
+
     h2 {
-      color:#fff;
+      font-family: $fontBebasRegular;
+      letter-spacing: .05em;
+      color: #b3b3b3;
+      font-size: 5.1em;
+      margin: 0;
+      line-height: .9;
+      padding-bottom: 0px;
+      padding-top: 13px;
     }
+
     h5 {
-      color:#fff;
+      font-family: $fontBebasRegular;
+      color: #6f6f6f;
+      margin: 0;
+      font-weight: 100;
+      font-size: 1em;
+      letter-spacing: .09em;
+      display: inline-block;
+      padding-top: 13px;
+      padding-bottom: 10px;
+      border-top: #a9a9a9d1 solid .02em;
+      border-bottom: #a9a9a9d1 solid .02em;
+      line-height: .7;
+
     }
     p {
-      color:#fff;
+      margin: 0;
+      font-family: $fontOswald;
+      font-weight: 300;
+      font-size: 1.1em;
+      padding: 6px 0 3px 0;
+      letter-spacing: .05em;
+      color: #b3b3b3;
     }
     h3 {
-      color:#fff;
+      margin: 0;
+      color:#5a5a5a;
+      font-family: $fontOswald;
+      font-weight: 300;
+    }
+
+    @media (max-width: $break-1200px) {
+      p {
+        font-size: 1em;
+      }
     }
   }
 }

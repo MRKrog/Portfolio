@@ -224,7 +224,7 @@
             margin: 0;
             font-family: $fontBebasRegular;
             white-space: pre-line;
-            font-size: 5.5em;
+            font-size: 5.1em;
             line-height: .9;
             padding-bottom: 0px;
             padding-top: 15px;
@@ -233,7 +233,7 @@
             color: #b3b3b3;
 
             @media (max-width: $break-1200px) {
-              font-size: 5em;
+              font-size: 4.8em;
             }
 
             @media (max-width: $break-960px) {
@@ -270,7 +270,7 @@
           margin: 0;
           font-family: $fontOswald;
           font-weight: 300;
-          font-size: 1.2em;
+          font-size: 1.1em;
           padding: 6px 0 3px 0;
           letter-spacing: .05em;
           color: #b3b3b3;
@@ -446,7 +446,7 @@
 }
 
 .FeaturedProject:last-child {
-  margin-bottom: 3.5em;
+  margin-bottom: 1.5em;
 
   @media (max-width: $break-450px) {
     margin-bottom: 1.5em;
