@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Fade from 'react-reveal/Fade';
 
 class About extends Component {
   constructor(){
@@ -15,9 +16,11 @@ class About extends Component {
 
     return (
       <div className="About">
+        <Fade left={true} fraction={0.2}>
         <section className="About-Image">
-        <img src={require('../../assets/images/AboutMe2.png')} alt="Michael Krog" />
+          <img src={require('../../assets/images/AboutMe2.png')} alt="Michael Krog" />
         </section>
+        </ Fade>
         <section className="About-Copy">
           <h4>A Little Bit</h4>
           <h2>About Me</h2>

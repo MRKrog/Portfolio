@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import TiltPhaseSix from '../TiltPhaseSix/TiltPhaseSix'
 
+import Fade from 'react-reveal/Fade';
+
 const options = {
   max: 20,
   perspective: 1000,
@@ -23,6 +25,7 @@ class FeaturedProject extends Component {
     })
 
     return (
+      <Fade left fraction={.2}>
       <div className='FeaturedProject'>
         <div className="Featured-Background">
           <div className="Featured-Content">
@@ -74,6 +77,7 @@ class FeaturedProject extends Component {
           </div>
         </div>
       </div>
+      </Fade>
     )
   }
 }
