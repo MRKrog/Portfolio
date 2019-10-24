@@ -17,7 +17,7 @@ class Hero extends Component {
     }
 
     return (
-<Parallax className="custom-class" y={[-10, 10]} tagOuter="div">
+    <Parallax className="custom-class" y={[-5, 10]} tagOuter="div">
       <div className='Hero' style={{backgroundImage: `url(${require(`../../assets/images/${mainImage}.jpg`)})`}}>
 
         <div className={heroStyle}>
@@ -30,7 +30,7 @@ class Hero extends Component {
         </div>
 
       </div>
-</Parallax>
+    </Parallax>
     )
   }
 }

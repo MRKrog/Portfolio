@@ -4,6 +4,8 @@ import * as actions from "../../actions";
 import PropTypes from "prop-types";
 import FeaturedProject from "../FeaturedProject/FeaturedProject";
 import Hero from "../Hero/Hero";
+import About from '../About/About';
+import Footer from "../../components/Footer/Footer";
 
 import { ParallaxProvider } from 'react-scroll-parallax';
 
@@ -29,9 +31,11 @@ export class FeaturedContainer extends Component {
         <ParallaxProvider>
         <Hero {...this.state} />
         </ParallaxProvider>
+        <About />
         <div className="FeaturedContainer">
           { allFeaturedProjects }
         </div>
+        <Footer />
       </div>
     )
   }

@@ -6,4 +6,9 @@
 .FeaturedContainer {
   width: 100%;
   z-index: 9;
+
+  .FeaturedProject:first-child {
+    margin-top: 0;
+  }
+
 }

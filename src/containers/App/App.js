@@ -5,7 +5,6 @@ import { Route, Switch } from "react-router-dom";
 import * as actions from '../../actions';
 
 import SideBar from '../SideBar/SideBar';
-import About from '../About/About';
 import FeaturedContainer from '../FeaturedContainer/FeaturedContainer';
 import ProjectContainer from '../ProjectContainer/ProjectContainer';
 
@@ -51,7 +50,6 @@ export class App extends Component {
             }} />
           }
         </Switch>
-        <About />
         <section className={backDropStyle} onClick={() => sideBarDisplay(false)}></section>
       </div>
     )
