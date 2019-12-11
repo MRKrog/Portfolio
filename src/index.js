@@ -27,5 +27,5 @@ const router = (
   </Provider>
 )
 
-ReactDOM.render(router, document.getElementById('root'));
+setTimeout(() => ReactDOM.render(router, document.getElementById("root")), 2000);
 serviceWorker.unregister();

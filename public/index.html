@@ -10,10 +10,42 @@
     <meta name="theme-color" content="#000000" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" crossorigin="anonymous">
+
+    <style>
+      body {
+        margin: 0;
+      }
+      #root {
+        background: #292929;
+      }
+      .pageLoader {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #loading {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        border: 3px solid rgba(255,255,255,.3);
+        border-radius: 50%;
+        border-top-color: #fff;
+        animation: spin 1s ease-in-out infinite;
+        -webkit-animation: spin .8s ease-in-out infinite;
+      }
+      @keyframes spin { to { -webkit-transform: rotate(360deg); } }
+    </style>
+
     <title>Portfolio</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="pageLoader">
+        <div id="loading"></div>
+      </div>
+    </div>
   </body>
 </html>

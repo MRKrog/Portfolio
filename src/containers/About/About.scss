@@ -3,7 +3,7 @@
   margin: auto;
   width: 100%;
   flex-direction: row;
-  padding: 1em 50px 0 50px;
+  // padding: 1em 50px 0 50px;
   position: relative;
 
   @media (max-width: $break-1010px) {
@@ -11,7 +11,7 @@
   }
 
   @media (max-width: $break-825px) {
-    padding: 1em 50px 1em 50px;
+    // padding: 1em 50px 1em 50px;
   }
 
   &::before {
@@ -28,6 +28,7 @@
   }
 
   .About-Image {
+    padding-left: 2em;
     img {
       display: block;
       filter: grayscale(0.6);
@@ -47,12 +48,16 @@
 
   .About-Copy {
     text-align: left;
-    padding-left: 2em;
+    padding: 0 2em;
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: baseline;
     z-index: 9;
+
+    @media (max-width: $break-825px) {
+      padding: 0 4em;
+    }
 
     .About-Pre {
       display: flex;
@@ -148,6 +153,10 @@
 
       @media (max-width: $break-900px) {
         font-size: .75em;
+      }
+
+      @media (max-width: $break-825px) {
+        display: none;
       }
 
       @media (max-width: $break-550px) {
